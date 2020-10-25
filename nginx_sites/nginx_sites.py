@@ -172,7 +172,7 @@ def dump_config(path, config):
 def get_input(prompt, prefill=''):
     readline.set_startup_hook(lambda: readline.insert_text(prefill))
     try:
-        return raw_input(prompt)
+        return input(prompt)
     finally:
         readline.set_startup_hook()
 
